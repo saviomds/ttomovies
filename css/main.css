@@ -379,9 +379,10 @@ body.dark .search-field i {
   margin: 150px auto;
   padding: 20px;
   gap: 20px;
+  color: #fff;
 }
 .card-list .card-item {
-  background: #fff;
+  background: #000000;
   padding: 26px;
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
@@ -390,6 +391,7 @@ body.dark .search-field i {
   text-decoration: none;
   border: 2px solid transparent;
   transition: border 0.5s ease;
+  color: #fff;
 }
 .card-list .card-item:hover {
   border: 2px solid #000;
@@ -410,7 +412,7 @@ body.dark .search-field i {
   font-weight: 600;
 }
 .card-list .developer {
-  background-color: #f7dff5;
+  background-color: #000000;
   color: #b22485;
 }
 .card-list .designer {
@@ -422,7 +424,7 @@ body.dark .search-field i {
   color: #205c20;
 }
 .card-item h3 {
-  color: #000;
+  color: #ffffff;
   font-size: 1.438rem;
   margin-top: 28px;
   font-weight: 600;
@@ -434,7 +436,7 @@ body.dark .search-field i {
   transform: rotate(-35deg);
   height: 40px;
   width: 40px;
-  color: #000;
+  color: #ffffff;
   border: 1px solid #000;
   border-radius: 50%;
   margin-top: 40px;
@@ -447,7 +449,7 @@ body.dark .search-field i {
 
 /* footer  */
 .main-footer {
-  background-color: #18191a;
+  background-color: #001e3b;
 }
 .main-footer > div {
   display: grid;
@@ -455,6 +457,7 @@ body.dark .search-field i {
   grid-gap: 10px;
   padding: 20px;
   margin: 50px;
+  color: #fff;
 }
 .main-footer div div h2 {
   padding: 10px;
@@ -468,7 +471,7 @@ body.dark .search-field i {
   list-style: none;
   padding: 5px;
   margin: 10px;
-  color: #2c2c2c93;
+  color: #ffffff93;
 }
 .main-footer div div p {
   width: 100%;
