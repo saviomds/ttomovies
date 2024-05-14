@@ -2,12 +2,128 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <title>ttomovies</title>
   </head>
   <body>
-    <h3>loo</h3>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"
+          ><img src="./logo/logo.png" alt="logo"
+        /></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#">TTOMOVIES</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+
+            <div class="search-field">
+              <input type="text" placeholder="Search..." />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <marquee>
+        <p>Films, Music, Radio-podCast Label Events Meichandise</p>
+      </marquee>
+    </nav>
+
+    <div class="card-list">
+      <a href="#" class="card-item">
+        <img src="img/19.jpg" alt="Card Image" />
+        <span class="developer">Developer</span>
+        <h3>A "developer" codes software and websites.</h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="img/14.jpg" alt="Card Image" />
+        <span class="designer">Designer</span>
+        <h3>A "designer" is a design expert.</h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+      <a href="#" class="card-item">
+        <img src="img/14.jpg" alt="Card Image" />
+        <span class="editor">Editor</span>
+        <h3>An "editor" ensures content quality and accuracy.</h3>
+        <div class="arrow">
+          <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+      </a>
+    </div>
+    <footer class="main-footer">
+      <div class="footer">
+        <div>
+          <h2>About us</h2>
+          <p>
+            Welcome to TTOOVIx Movie! We're your go-to spot for everything
+            movies. From reviews to recommendations, we've got you covered. Join
+            us as we explore the wonderful world of cinema together!.
+          </p>
+          <div>
+            <ul class="contact">
+              <li>5311 Kigali. Kacyiru, 13507</li>
+              <li>info@gmail.com</li>
+              <li>+(250)788 284 2342</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h2>Up Coming</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dignissimos, veniam.
+          </p>
+        </div>
+        <div>
+          <h2>sign newsletter</h2>
+          <div class="contact-text">
+            <p>
+              Subscribe to our newsletter list to get latest news and updates
+              from us
+            </p>
+            <div class="search-field">
+              <input type="text" placeholder="Search..." />
+              <button>search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
