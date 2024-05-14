@@ -619,4 +619,7 @@ body.dark .search-field i {
   .list {
     display: none;
   }
+  .card-list {
+    padding-top: 100px;
+  }
 }
