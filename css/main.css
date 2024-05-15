@@ -95,7 +95,7 @@ body,
   background-image: url("../image/img2.jpg");
 }
 .slide3 {
-  background-image: url("../image/img3.jpg");
+  background-image: url("../image/img4.jpg");
 }
 
 .slide-content {
@@ -173,6 +173,12 @@ body,
   color: #fff;
 }
 /* end  */
+.main-slide-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
