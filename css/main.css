@@ -97,6 +97,9 @@ body,
 .slide3 {
   background-image: url("../image/img3.jpg");
 }
+.slide4 {
+  background-image: url("../image/img4.jpg");
+}
 
 .slide-content {
   display: flex;
