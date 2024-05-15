@@ -173,6 +173,9 @@ body,
   background-color: #00000000;
   color: #fff;
 }
+#slide {
+  width: 90%;
+}
 /* end  */
 
 .container {
