@@ -9,6 +9,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #e3fd20;
+  padding: 20px;
 }
 
 .topnav a {
@@ -356,7 +357,7 @@ body,
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 20px 0;
   background: white;
   white-space: nowrap;
   position: relative;
@@ -365,14 +366,13 @@ body,
   border-top: none;
   border-left: none;
   border-right: none;
-
-  margin: 10px;
 }
 .logos h2 {
+  margin-top: -20px;
   margin-left: 110px;
   font-size: 30px;
   padding-bottom: 20px;
-  color: #000000;
+  color: #5e5e5e;
   text-decoration: underline;
 }
 .logos:before,
@@ -405,7 +405,7 @@ body,
 }
 
 .logos-slide img {
-  height: 150px;
+  height: 100px;
   margin: 0 40px;
 }
 .main-form {
@@ -465,7 +465,7 @@ body,
   font-size: 20px;
   color: #808080;
 }
- 
+
 .main-footer > div ul li:hover,
 form .icons a:hover {
   color: #e3fd20;
@@ -477,9 +477,7 @@ form .icons a:hover {
   padding: 10px;
   cursor: pointer;
 }
-.marquee {
-  margin-top: -50px;
-}
+
 /* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {
@@ -548,10 +546,13 @@ form .icons a:hover {
     float: left;
     margin-left: 0%;
   }
+
   .topnav {
     overflow: hidden;
     background-color: #e3fd20;
+    padding: 10px;
   }
+
   .navbar {
     display: none;
   }
@@ -579,8 +580,12 @@ form .icons a:hover {
     border-radius: 5px;
     margin: 10px;
   }
+  .logos-slide img {
+    height: 70px;
+  }
   .logos h2 {
     margin-left: 130px;
+    margin-top: -10px;
     font-size: 20px;
     color: #002c6e;
     text-decoration: none;
@@ -619,10 +624,6 @@ form .icons a:hover {
     display: grid;
     grid-template-columns: 100%;
     text-align: start;
-  }
-  .marquee {
-    margin-top: -10px;
-    margin-bottom: -25px;
   }
 }
 
