@@ -1,7 +1,8 @@
 let sliderImages = document.querySelectorAll(".slide"),
   arrowLeft = document.querySelector("#arrow-left"),
   arrowRight = document.querySelector("#arrow-right"),
-  current = 0;
+  current = 0,
+  intervalId; // Variable to hold the interval ID
 
 // Clear all images
 function reset() {
@@ -14,38 +15,35 @@ function reset() {
 function startSlide() {
   reset();
   sliderImages[0].style.display = "block";
+  // Start the interval
+  intervalId = setInterval(slideRight, 8000);
 }
 
 // Show prev
 function slideLeft() {
   reset();
-  sliderImages[current - 1].style.display = "block";
-  current--;
+  current = (current - 1 + sliderImages.length) % sliderImages.length;
+  sliderImages[current].style.display = "block";
 }
 
 // Show next
 function slideRight() {
   reset();
-  sliderImages[current + 1].style.display = "block";
-  current++;
+  current = (current + 1) % sliderImages.length;
+  sliderImages[current].style.display = "block";
 }
 
 // Left arrow click
 arrowLeft.addEventListener("click", function () {
-  if (current === 0) {
-    current = sliderImages.length;
-  }
   slideLeft();
 });
 
 // Right arrow click
 arrowRight.addEventListener("click", function () {
-  if (current === sliderImages.length - 1) {
-    current = -1;
-  }
   slideRight();
 });
 
+// Start slider
 startSlide();
 
 function myFunction() {
