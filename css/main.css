@@ -463,8 +463,9 @@ body,
   display: inline;
   padding: 0 20px;
   font-size: 20px;
-  color: #b4b4b4;
+  color: #808080;
 }
+ 
 .main-footer > div ul li:hover,
 form .icons a:hover {
   color: #e3fd20;
@@ -657,5 +658,12 @@ form .icons a:hover {
   }
   .topnav a.icon i {
     font-size: 20px;
+  }
+  .logos h2 {
+    margin-left: 100px;
+  }
+  .main-form {
+    height: 90vh;
+    width: 95%;
   }
 }
