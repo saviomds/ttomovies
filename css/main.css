@@ -408,6 +408,77 @@ body,
   height: 150px;
   margin: 0 40px;
 }
+.main-form {
+  background-image: url("../image/form.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+.main-form div.form {
+  position: relative;
+  text-align: center;
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  top: 20%;
+  width: 60%;
+  margin-left: 20%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.form h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+.form .email input {
+  padding: 20px;
+  border: 1px solid #fff;
+  width: 30%;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+}
+.form .email div button {
+  margin: 10px;
+  padding: 15px;
+  border: none;
+  width: 34%;
+  background-color: #e3fd20;
+  color: #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.form .icons a {
+  padding: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+}
+.main-footer > div ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+  font-size: 20px;
+  color: #b4b4b4;
+}
+.main-footer > div ul li:hover,
+form .icons a:hover {
+  color: #e3fd20;
+  cursor: pointer;
+}
+.footer-items,
+.copyright {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.marquee {
+  margin-top: -50px;
+}
 /* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {
@@ -512,6 +583,45 @@ body,
     font-size: 20px;
     color: #002c6e;
     text-decoration: none;
+  }
+  .main-form div.form {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    margin-left: 0%;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  form h2 {
+    font-size: 10px;
+  }
+  .form .email input {
+    padding: 20px;
+    width: 70%;
+    font-size: 20px;
+  }
+  .form .email div button {
+    margin: 10px;
+    padding: 15px;
+    width: 79%;
+    font-size: 20px;
+  }
+  .form .icons a {
+    padding: 0 25px;
+    font-size: 40px;
+  }
+  .main-form {
+    height: 60vh;
+    width: 95%;
+  }
+  .main-footer > div ul li {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: start;
+  }
+  .marquee {
+    margin-top: -10px;
+    margin-bottom: -25px;
   }
 }
 
