@@ -360,8 +360,21 @@ body,
   background: white;
   white-space: nowrap;
   position: relative;
-}
+  border: 5px solid #b700ff;
+  border-top: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 
+  margin: 10px;
+}
+.logos h2 {
+  margin-left: 110px;
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: #000000;
+  text-decoration: underline;
+}
 .logos:before,
 .logos:after {
   position: absolute;
@@ -490,8 +503,15 @@ body,
     width: 100%;
   }
   .logos {
-    width: 95%;
+    width: 90%;
     border-radius: 5px;
+    margin: 10px;
+  }
+  .logos h2 {
+    margin-left: 130px;
+    font-size: 20px;
+    color: #002c6e;
+    text-decoration: none;
   }
 }
 
