@@ -16,7 +16,7 @@ function startSlide() {
   reset();
   sliderImages[0].style.display = "block";
   // Start the interval
-  intervalId = setInterval(slideRight, 8000);
+  intervalId = setInterval(slideRight, 3000);
 }
 
 // Show prev
@@ -50,8 +50,12 @@ function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
+    x.style.backgroundColor = "black";
+    document.getElementById("menu").style.color = "white";
   } else {
     x.className = "topnav";
+    x.style.backgroundColor = "#e3fd20";
+    document.getElementById("menu").style.color = "black";
   }
 }
 const initSlider = () => {
