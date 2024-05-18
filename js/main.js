@@ -51,6 +51,7 @@ function myFunction() {
   if (x.className === "topnav") {
     x.className += " responsive";
     x.style.backgroundColor = "black";
+
     document.getElementById("menu").style.color = "white";
   } else {
     x.className = "topnav";
