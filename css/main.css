@@ -14,6 +14,9 @@ header {
   text-align: center;
   z-index: 1000;
 }
+.nowrapping {
+  padding-top: 150px;
+}
 .topnav {
   overflow: hidden;
   background-color: #e3fd20;
@@ -61,7 +64,7 @@ header {
   text-align: center;
   background-color: #000000;
   margin-top: -10px;
-  padding: 20px;
+  padding: 10px;
 }
 .navbar > ul li {
   list-style: none;
@@ -95,6 +98,7 @@ body,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 130%;
 }
 
 .slide1 {
@@ -294,7 +298,7 @@ body,
 }
 .viewAll {
   padding: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #ebdb00;
   background-color: transparent;
   color: #fff;
   font-size: 20px;
@@ -346,8 +350,12 @@ body,
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
+  margin-left: -60%;
+  margin-bottom: 20%;
 }
-
+.containers img {
+  width: 100%;
+}
 /* end experiance  */
 
 /* /logos  */
@@ -367,11 +375,11 @@ body,
   background: rgb(255, 255, 255);
   white-space: nowrap;
   position: relative;
-  border: 5px solid #b700ff;
   border-top: none;
   border-top: none;
   border-left: none;
   border-right: none;
+  margin-left: -20px;
 }
 .logos h2 {
   margin-top: -20px;
@@ -379,13 +387,12 @@ body,
   font-size: 30px;
   padding-bottom: 20px;
   color: #5e5e5e;
-  text-decoration: underline;
 }
 .logos:before,
 .logos:after {
   position: absolute;
   top: 0;
-  width: 150px;
+  width: 50px;
   height: 100%;
   content: "";
   z-index: 2;
@@ -393,15 +400,19 @@ body,
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.466));
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.158),
+    rgb(255, 255, 255)
+  );
 }
 
 .logos:after {
   right: 0;
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.295)
+    rgba(255, 255, 255, 0.219),
+    rgba(255, 255, 255, 0.384)
   );
 }
 
@@ -433,7 +444,7 @@ body,
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
-  top: 20%;
+  top: 2%;
   width: 60%;
   margin-left: 20%;
   padding: 10px;
@@ -544,10 +555,13 @@ form .icons a:hover {
   }
   .containers {
     max-width: 100%;
-    width: 100%;
+    width: 96%;
+    margin-left: -1%;
+    margin-bottom: -20%;
   }
   .containers .content {
     width: 90%; /* Full width */
+    margin-left: 0%;
   }
 }
 
@@ -601,6 +615,8 @@ form .icons a:hover {
     width: 99%;
     margin-left: -15px;
     border-radius: 5px;
+    background-color: #cccccc;
+    color: #000;
   }
   .header-slide h2 {
     font-size: 20px;
@@ -613,9 +629,9 @@ form .icons a:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .logos {
-    width: 90%;
+    width: 107%;
     border-radius: 5px;
-    margin: 10px;
+    margin-left: -20px;
   }
   .logos-slide img {
     height: 70px;
@@ -643,9 +659,10 @@ form .icons a:hover {
     font-size: 10px;
   }
   .form .email input {
-    width: 85%;
+    width: 90%;
     font-size: 20px;
     margin-left: -20px;
+    padding: 10px;
   }
   .form .email div button {
     margin: 10px;
@@ -671,6 +688,27 @@ form .icons a:hover {
     display: grid;
     grid-template-columns: 100%;
     text-align: start;
+  }
+  .containers img {
+    height: 350px;
+  }
+  .containers {
+    max-width: 100%;
+    width: 96%;
+    margin-left: -1%;
+    margin-bottom: -20%;
+  }
+  .containers .content {
+    width: 90%; /* Full width */
+    margin-left: 0%;
+  }
+  .viewAll {
+    font-size: 15px;
+    margin-left: -5px;
+  }
+  .wrap {
+    position: relative;
+    margin-left: -8.5px;
   }
 }
 
@@ -722,13 +760,19 @@ form .icons a:hover {
     height: 40vh;
     width: 98%;
   }
+  .footer .footer-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .main-footer {
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
-    width: 100%;
-    margin-left: -9px;
+    width: 106%;
+    margin-left: -20px;
     color: #000;
-    border-radius: 5px;
+  }
+  .copyright {
+    border-top: 1px solid #8a8a8a;
   }
 }
 @media screen and (max-width: 375px) {
