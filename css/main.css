@@ -755,7 +755,10 @@ form .icons a:hover {
     float: left;
   }
 }
-@media screen and (max-width: 434px) {
+@media screen and (max-width: 534px) {
+  .main-logo img {
+    width: 10%;
+  }
   .topnav a img {
     width: 40%;
     margin-left: 50px;
