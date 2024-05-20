@@ -45,18 +45,19 @@ arrowRight.addEventListener("click", function () {
 
 // Start slider
 startSlide();
-
 function myFunction() {
   var x = document.getElementById("myTopnav");
+
   if (x.className === "topnav") {
     x.className += " responsive";
     x.style.backgroundColor = "black";
-
+    document.querySelector(".topnav").style.height = "100vh";
     document.getElementById("menu").style.color = "white";
   } else {
     x.className = "topnav";
     x.style.backgroundColor = "#e3fd20";
     document.getElementById("menu").style.color = "black";
+    document.querySelector(".topnav").style.height = "8vh";
   }
 }
 const initSlider = () => {
@@ -121,3 +122,10 @@ const initSlider = () => {
 };
 
 window.addEventListener("load", initSlider);
+
+function iconing() {
+  alert("Not Functional Yet");
+}
+function addCart() {
+  alert("Add Cart Not Functional Yet ");
+}

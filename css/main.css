@@ -487,6 +487,10 @@ body,
   color: #808080;
 }
 
+.topnav .inline-icon:hover {
+  background-color: #00000073;
+  border-radius: 10px;
+}
 .main-footer > div ul li:hover,
 form .icons a:hover {
   color: #e3fd20;
@@ -577,27 +581,37 @@ form .icons a:hover {
     font-size: 40px;
   }
   .topnav a.icon {
-    float: right;
+    float: left;
     display: block;
     color: #ffffff;
   }
   .topnav a i {
-    color: #fff;
+    color: #f0f0f0;
   }
   .topnav a {
     font-size: 30px;
     color: #ffffff;
   }
   .topnav a.active {
-    float: left;
+    float: right;
     margin-left: 0%;
   }
+  .topnav .inline-icon {
+    margin-top: 5px;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
+  .topnav .inline-icon:hover {
+    background-color: #00000073;
+    border-radius: 10px;
+  }
   .topnav {
     border-radius: 5px;
     overflow: hidden;
     background-color: #e3fd20;
     padding: 10px;
+    margin-left: -10px;
   }
 
   .navbar {
@@ -734,16 +748,26 @@ form .icons a:hover {
     border-width: 15px 0 15px 20px;
   }
   .active img {
-    margin-left: 60px;
+    margin-left: 30px;
+  }
+  .topnav a.inline-icon {
+    display: inline;
+    float: left;
   }
 }
 @media screen and (max-width: 434px) {
   .topnav a img {
     width: 40%;
-    margin-left: -20px;
+    margin-left: 50px;
   }
   .topnav a.icon i {
-    font-size: 20px;
+    font-size: 30px;
+    position: relative;
+    bottom: -10px;
+    right: 10px;
+  }
+  .topnav.active {
+    margin-left: -10px;
   }
   .logos h2 {
     margin-left: 100px;
