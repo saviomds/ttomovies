@@ -52,12 +52,15 @@ function myFunction() {
     x.className += " responsive";
     x.style.backgroundColor = "black";
     document.querySelector(".topnav").style.height = "100vh";
-    document.getElementById("menu").style.color = "white";
+    document.getElementById("menu").style.cdisplay = "none";
+    document.getElementById("x").style.display = "block";
+    document.getElementById("x").style.color = "white";
   } else {
     x.className = "topnav";
     x.style.backgroundColor = "#e3fd20";
     document.getElementById("menu").style.color = "black";
     document.querySelector(".topnav").style.height = "8vh";
+    document.getElementById("x").style.display = "none";
   }
 }
 const initSlider = () => {

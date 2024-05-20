@@ -37,7 +37,9 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #ffe600;
 }
-
+#x {
+  display: none;
+}
 .slide-img img:hover {
   transform: translate(20px);
   border: 2px solid #ffe600;
@@ -87,5 +89,8 @@
   .icons-show h2 {
     font-size: 20px;
     color: #fff;
+  }
+  #x {
+    margin-top: -40px;
   }
 }
