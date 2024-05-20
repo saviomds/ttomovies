@@ -8,6 +8,9 @@
   overflow: hidden;
   margin: 20px;
 }
+.main-logo {
+  margin-top: -25px;
+}
 
 .slide-track {
   display: flex;
@@ -56,10 +59,18 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .main-logo {
+    display: block;
+  }
+  .main-logo img {
+    margin-bottom: -90px;
+    width: 40%;
+    margin-right: -150px;
+  }
   .sliderring {
     width: 105%;
     margin-left: -15px;
-    margin-top: -80px;
+    margin-top: -60px;
   }
 
   .slide-img {
