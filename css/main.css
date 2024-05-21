@@ -15,13 +15,25 @@ body {
 }
 .header-logo .icons {
   float: right;
-  margin-top: -70px;
+  position: relative;
+  top: -60px;
+  cursor: pointer;
+}
+.header-logo .icons div i:hover {
+  color: #ff006a;
 }
 .header-logo .icons div {
   display: inline;
   font-size: 30px;
   padding: 0 20px;
 }
+.user i {
+  border-radius: 10px;
+  background-color: #000000bd;
+  padding: 10px;
+  color: #fff;
+}
+
 #btn {
   display: none;
   border: none;
@@ -254,6 +266,11 @@ h3 {
     position: relative;
     top: -5px;
     left: -20px;
+  }
+  .header-logo .icons {
+    float: right;
+    position: relative;
+    top: -5px;
   }
   .header-logo .icons div {
     font-size: 20px;
