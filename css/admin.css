@@ -25,7 +25,14 @@ body::before {
   background-position: center;
   background-size: cover;
 }
-
+.back {
+  border: none;
+  background-color: transparent;
+}
+.back i {
+  color: #ccc;
+  font-size: 30px;
+}
 .wrapper {
   width: 400px;
   border-radius: 8px;
