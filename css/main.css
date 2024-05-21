@@ -138,6 +138,7 @@ h3 {
 .hold > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 10px;
 }
 .hold > div.image-pool > div img {
   width: 50%;
@@ -197,7 +198,7 @@ h3 {
   font-size: 25px;
 }
 .form-items .input input {
-  width: 25%;
+  width: 30%;
   padding: 10px;
   font-size: 20px;
   border: 2px solid #cccccc6c;
@@ -206,7 +207,7 @@ h3 {
 }
 .button-submit input {
   margin: 10px;
-  width: 25%;
+  width: 30%;
   padding: 10px;
   font-size: 20px;
   background-color: #e3fd20;
@@ -335,6 +336,9 @@ h3 {
     font-size: 20px;
     padding: 0 10px;
     font-size: 30px;
+  }
+  .addCard i {
+    margin-right: -19px;
   }
   .header-logo .icons {
     margin-top: -60px;
