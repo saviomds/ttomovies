@@ -11,7 +11,7 @@ body {
 .header-logo .logo {
   text-align: center;
   position: relative;
-  padding: 10px;
+  padding: 5px;
 }
 .header-logo .icons {
   float: right;
@@ -19,13 +19,11 @@ body {
   top: -60px;
   cursor: pointer;
 }
-.header-logo .icons div i:hover {
-  color: #ff006a;
-}
+
 .header-logo .icons div {
   display: inline;
   font-size: 30px;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 .user i {
   border-radius: 10px;
@@ -41,9 +39,9 @@ body {
 }
 .main-navbar {
   background-color: #000000;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff2c;
 
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 .main-navbar ul li,
@@ -51,7 +49,7 @@ body {
   list-style: none;
   text-decoration: none;
   display: inline;
-  padding: 0 10px;
+  padding: 0 30px;
   font-size: 20px;
   color: #fff;
 }
