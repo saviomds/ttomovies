@@ -6,6 +6,7 @@ btn.addEventListener("click", () => {
   document.querySelector(".main-section").style.display = "none";
   document.querySelector(".main-slide-part").style.display = "none";
   document.querySelector(".main-grid-ads").style.display = "none";
+  document.querySelector(".logos").style.display = "none";
 });
 
 const iconx = document.querySelector(".iconx");
