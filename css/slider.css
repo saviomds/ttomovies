@@ -52,7 +52,7 @@
   margin-top: -60px;
   margin-left: 40px;
   padding: 10px;
-  color: yellow;
+  color: e3fd20;
 }
 /* Adjustments for laptops */
 @media screen and (min-width: 768px) {
@@ -76,7 +76,7 @@
 }
 
 .scrollbar-thumb {
-  background-color: #ffc400; /* Adjust as needed */
+  background-color: #e3fd20; /* Adjust as needed */
   height: 100%;
   width: 20%; /* Adjust as needed */
 }
