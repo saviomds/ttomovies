@@ -1,24 +1,33 @@
 const express = require("express");
+const mongoose = require("mongoose");
+const multer = require("multer");
 const path = require("path");
 const app = express();
+const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
+const adminRoutes = require("./routes/admin");
+const indexRoutes = require("./routes/indexRoutes");
+const registerRoutes = require("./routes/registerRoutes");
+const loginRoutes = require("./routes/loginRoutes");
 
-// Serve static files from the "public" directory
+require("dotenv").config();
+app.set("view engine", "ejs");
+
 app.use(express.static(path.join(__dirname, "public")));
+// Parse URL-encoded bodies (as sent by HTML forms)
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});
+// Parse JSON bodies (as sent by API clients)
+app.use(bodyParser.json());
 
-app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/register.html"));
-});
+app.use("/", indexRoutes);
+app.use("/", registerRoutes);
+app.use("/", loginRoutes);
 
-app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/login.html"));
-});
-app.get("/admin", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/update/admin.html"));
-});
-app.listen(3000, () => {
-  console.log("Server is running on http://localhost:3000");
+app.use("/admin", adminRoutes);
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
