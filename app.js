@@ -23,7 +23,6 @@ app.use(bodyParser.json());
 app.use("/", indexRoutes);
 app.use("/", registerRoutes);
 app.use("/", loginRoutes);
-
 app.use("/admin", adminRoutes);
 
 const port = process.env.PORT || 3000;
